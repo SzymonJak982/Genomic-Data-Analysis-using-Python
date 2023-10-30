@@ -1,4 +1,4 @@
-# Genomic-Data-Processing-using-Python-
+# Genomic-Data-Analysis-using-Python-
 In this notebook I will perform genomic data processing using Python to check which variants of genes in male patient could be potentially linked with disease. Data was acquired from publically available docker image: spark-edugen-2.4.3-0.1.7-ga024cfc containing data from NGS (Next-Generation Sequencing) analysis of anonymous patient and his parents.   
 
 ## Introduction
