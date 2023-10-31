@@ -1,6 +1,7 @@
 # Genomic-Data-Analysis-using-Python-
-In this notebook I will perform genomic data processing using Python to check which variants of genes in male patient could be potentially linked with disease. Data was acquired from publically available docker image: spark-edugen-2.4.3-0.1.7-ga024cfc containing data from NGS (Next-Generation Sequencing) analysis of anonymous patient and his parents.   
-
+In this notebook, I conducted genomic data processing using Python to investigate potential disease-associated gene variants in a male patient. The dataset was obtained from publicly available data provided by sequencers at the Institute of Mother and Child in Warsaw. The data originates from Next-Generation Sequencing (NGS) analysis of an anonymous patient and his mother.
+<br /> Docker Image used: spark-edugen-2.4.3-0.1.7-ga024cfc
+ 
 ## Introduction
 NGS (Next-Generation Sequencing) is a powerful technology used in genomics to decode and understand the genetic information contained in DNA. It provides a comprehensive view of an individual's genetic makeup, achieved by generating millions of short DNA sequences, or "short reads." These short reads are then aligned, assembled, and analyzed to reveal genetic variations, mutations, and other genomic features. NGS technology is essential for various applications in research and clinical settings, enabling the study of complex genetic traits,
 
@@ -15,7 +16,7 @@ NGS data analysis involves a multi-step process:
 3. **Data Preprocessing**: Data is preprocessed to remove low-quality reads and adapters (sequences used to aid keeping track of separate sequences) used, improving the reliability of downstream analysis.
 4. **Pipeline Operations**: Alignment tools like BWA map reads to a reference genome, and tools like GATK (Genome Analysis Toolkit) are used for variant calling, which is finding areas of the DNA that, after alligning to reference genome seems to be unique for the patient. 
 5. **Data Visualization**: Tools like IGV (Integrative Genomics Viewer) are used to visualize data, aiding in exploring genomic features.
-6. **Variant Analysis**: Variants are checked against publically available databases of variants, suchas ClinVar to determine their clinical significance and association with diseases.
+6. **Variant Analysis**: Variants are checked against publically available databases of variants, such as ClinVar to determine their clinical significance and association with diseases.
 
 ## Key insights:  
 [in progress]
