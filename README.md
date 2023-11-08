@@ -1,5 +1,5 @@
 # Genomic-Data-Analysis-using-Python-
-In this notebook, I conducted genomic data processing using Python to investigate potential disease-associated gene variants in a male patient. The dataset was obtained from publicly available data provided by sequencers at the Institute of Mother and Child in Warsaw. The data originates from Next-Generation Sequencing (NGS) analysis of an anonymous patient and his mother.
+In these notebooks I conducted genomic data analysis using Python to investigate potential disease-associated gene variants in a sequenced DNA from the  male patient and his mother. The data was made available by the Institute of Mother and Child in Warsaw. DNA was sequenced using Illumina platform Next- Gen sequencer.
 <br /> Docker Image used: spark-edugen-2.4.3-0.1.7-ga024cfc
  
 ## Introduction
@@ -12,11 +12,13 @@ The primary goal of NGS data analysis is to extract meaningful information from 
 NGS data analysis involves a multi-step process:
 
 1. **Data Acquisition**: Raw sequencing data in FASTQ format, containing nucleotide reads and quality scores, is obtained from sequencing machines.
-2. **Exploratory Data Analysis**: We explore the quality and length of the reads to assess data quality.
-3. **Data Preprocessing**: Data is preprocessed to remove low-quality reads and adapters (sequences used to aid keeping track of separate sequences) used, improving the reliability of downstream analysis.
-4. **Pipeline Operations**: Alignment tools like BWA map reads to a reference genome, and tools like GATK (Genome Analysis Toolkit) are used for variant calling, which is finding areas of the DNA that, after alligning to reference genome seems to be unique for the patient. 
+2. **Exploratory Data Analysis**: Exploration of the quality and length of the reads to assess data quality.
+3. **Data Preprocessing**: Preprocessing of the data in order to remove low-quality reads and adapters (sequences used to aid keeping track of separate sequences) used, improving the reliability of downstream analysis.
+4. **Pipeline Operations**: Alignment tools like BWA map reads to a reference genome, and tools like GATK (Genome Analysis Toolkit) are used for variant calling.
 5. **Data Visualization**: Tools like IGV (Integrative Genomics Viewer) are used to visualize data, aiding in exploring genomic features.
-6. **Variant Analysis**: Variants are checked against publically available databases of variants, such as ClinVar to determine their clinical significance and association with diseases.
+6. **Variant Analysis**: Variants are checked against publically available databases of variants to determine their clinical significance and association with diseases.
 
 ## Key insights:  
-[in progress]
+- The likely-pathogenic variant in SNAP25-AS1 was identified in both the son's and the mother's DNA, reinforcing its potential significance in the context of disease development
+- SNAP25-AS1 variant present in patient might be associated with rare genetically conditioned diseases like Epileptic Encephalopathy.
+  
